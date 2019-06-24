@@ -37,4 +37,8 @@ export class LoginComponent implements OnInit {
     this.router.navigate(['../order-page'], {relativeTo: this.route});
   }
 
+  signUp() {
+    this.router.navigate(['../signup-page'], {relativeTo: this.route})
+  }
+
 }

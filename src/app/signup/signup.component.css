@@ -1,0 +1,33 @@
+.SignUpPage {
+    background-color: #CF8F2E;
+    width: 100%;
+    height: 2000px;
+    text-align: center;
+}
+
+.SignUpPageDiv {
+    display: inline-block;
+    padding: 100px;
+    text-align: center;
+    margin: 75px 16px;
+    border: 1px solid black;
+    background-color: #8B4513;
+    color: white;
+}
+
+.btn-primary,
+.btn-primary:active {
+    background-color: #CF8F2E;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+span {
+    color: white;
+    text-align: left;
+}
+
+input.ng-invalid.ng-touched {
+    border: 2px solid red;
+}

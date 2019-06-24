@@ -1,0 +1,17 @@
+<div class='SignUpPage'>
+  <div class='SignUpPageDiv'>
+    <img src='https://www.mcdelivery.com.ph/uploads/images/BigMacALA435X320-min.png' style='height: 100px'>
+    <h1><strong>Roan's Burger</strong></h1>
+    <form [formGroup]='signUpForm' (ngSubmit)='onSubmit()'>
+      <label>Username:</label>
+      <input type='text' class='form-control' style='width: 100%' formControlName='username'>
+      <span class='help-block' *ngIf='!signUpForm.get("username").valid && signUpForm.get("username").touched'>Please input Username</span>
+      <br/>
+      <label>Password:</label>
+      <input type='password' class='form-control' style='width: 100%' formControlName='password'>
+      <span class='help-block' *ngIf='!signUpForm.get("password").valid && signUpForm.get("password").touched'>Please input Password</span>
+      <br/>
+      <button type='submit' class='btn btn-primary btn-block'>Sign Up</button>
+    </form>
+  </div>
+</div>
