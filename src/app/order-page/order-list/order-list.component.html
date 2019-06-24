@@ -1,0 +1,19 @@
+<div class='OrderListPageDiv'>
+  <img src='https://www.mcdelivery.com.ph/uploads/images/BigMacALA435X320-min.png' style='height: 100px'>
+  <h1>Roan's Burger</h1>
+  <h3>These are your order/s:</h3>
+  <p><strong>BURGER ROAN: </strong>{{ burgers.BurgerRoan }}</p>
+  <p><strong>CHEESE BURGER: </strong>{{ burgers.CheeseBurger }}</p>
+  <p><strong>BIG MAC: </strong>{{ burgers.BigMac }}</p>
+  <p><strong>CHEESE BURGER DE LUXE: </strong>{{ burgers.CheeseBurgerDeLuxe }}</p>
+  <p><strong>CHEESY BURGER ROAN: </strong>{{ burgers.CheesyBurgerRoan }}</p>
+  <p><strong>DOUBLE CHEESE BURGER: </strong>{{ burgers.DoubleCheeseBurger }}</p>
+  <p><strong>FILLET-O-FISH: </strong>{{ burgers.FilletOFish }}</p>
+  <p><strong>MC CHICKEN: </strong>{{ burgers.McChicken }}</p>
+  <p><strong>QUARTER POUNDER WITH CHEESE: </strong>{{ burgers.QuarterPounderWithCheese }}</p>
+  <p><strong>BULLY BOY: </strong>{{ burgers.BullyBoy }}</p>
+  <br/>
+  <p><strong>TOTAL PRICE: PHP {{ totalPrice }}.00</strong></p>
+  <button class='btn btn-primary' (click)='clearCart()' style='margin: 10px'>CLEAR CART</button>
+  <button class='btn btn-primary'>CHECKOUT</button>
+</div>
